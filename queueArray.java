@@ -3,9 +3,9 @@ public class queueArray {
 
 	private int tail,
 				head;
-	
+
 	private Comparable[] q;
-		
+	
 	public queueArray(int tamaño){
 		this.q=new Comparable[tamaño];
 		this.tail=this.head=-1;				
@@ -52,7 +52,7 @@ public class queueArray {
 			this.q[tail]=data;
 		}
 	}
-	
+		
 	public void dequeue(){
 		if(this.isEmpty()){
 			System.out.println("underflow");
@@ -67,5 +67,4 @@ public class queueArray {
 			this.head=(this.head+1)%this.q.length;
 		}
 	}
-
 }
